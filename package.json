@@ -1,5 +1,5 @@
 {
-  "name": "listener-get-node-route-depth",
+  "name": "get-node-route-depth",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
