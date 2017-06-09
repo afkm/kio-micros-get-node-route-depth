@@ -5,7 +5,8 @@
 const Path = require('path');
 
 var neo4j = require('neo4j-driver').v1;
-var driver = neo4j.driver("bolt://localhost", neo4j.auth.basic("neo4j", "lalala"));
+
+var driver = neo4j.driver("bolt://localhost", neo4j.auth.basic(process.env.NEO4J_UID, process.env.NEO4J_PWD));
 
 driver.onCompleted = function() {
   console.log('Successfully connected to Neo4J');
